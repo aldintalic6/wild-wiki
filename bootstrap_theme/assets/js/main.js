@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
    */
   new Swiper('.slides-1', {
     speed: 600,
-    loop: true,
+    loop: false,  // set true to enable swiping
     autoplay: {
       delay: 5000,
       disableOnInteraction: false
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
    */
   new Swiper('.slides-3', {
     speed: 600,
-    loop: true,
+    loop: false, // set true to enable swiping
     autoplay: {
       delay: 5000,
       disableOnInteraction: false
