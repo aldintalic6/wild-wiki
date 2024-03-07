@@ -138,6 +138,11 @@ h6 {
   background: #2cbc85;
 }
 
+.search_bar {
+  margin-top: 50px;
+}
+
+
 /*--------------------------------------------------------------
 # Scroll top button
 --------------------------------------------------------------*/
@@ -309,7 +314,6 @@ h6 {
 .header .logo i {
   font-size: 32px;
   margin-right: 8px;
-  line-height: 0;
 }
 
 @media (max-width: 575px) {
@@ -360,9 +364,12 @@ h6 {
     display: flex;
     list-style: none;
     align-items: center;
-    margin-left: 250px;
-    
+    margin-right: 30px;
   }
+
+  /*  .navbar ul li:last-child a {
+  }
+  */
 
   .navbar li {
     position: relative;
@@ -1199,6 +1206,7 @@ h6 {
   z-index: 1;
   padding: 0 5px;
   display: inline-block;
+  
 }
 
 .hero h2 span:before {
@@ -1218,7 +1226,33 @@ h6 {
   font-size: 18px;
 }
 
-.hero .btn-get-started {
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 32px;
+  }
+}
+
+.modal-content {
+  color: #000; /* Set text color to black */
+  background-color: #fff; /* Set background color to white */
+}
+
+.modal-body p{
+  color: #000;
+}
+
+.modal-footer .btn.btn-primary{
+  font-family: var(--font-primary);
+  color: #fff;
+  background: var(--color-primary);
+  border: none;
+}
+
+.modal-footer .btn.btn-primary:hover {
+  background: #2cbc85;
+}
+
+.add-entry-button {
   font-family: var(--font-primary);
   font-weight: 400;
   font-size: 14px;
@@ -1233,14 +1267,8 @@ h6 {
   margin-top: 35px;
 }
 
-.hero .btn-get-started:hover {
+.add-entry-button:hover {
   background: #2cbc85;
-}
-
-@media (max-width: 768px) {
-  .hero h2 {
-    font-size: 32px;
-  }
 }
 
 /*--------------------------------------------------------------
