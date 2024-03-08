@@ -29,6 +29,10 @@
   scroll-behavior: smooth;
 }
 
+.container.rounded.bg-white.mt-5.mb-5 {
+  border: 1px solid  #27a776; /* Change the color code to the desired color */
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -158,6 +162,9 @@ h6 {
   height: 44px;
   border-radius: 50px;
   transition: all 0.4s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .scroll-top i {
