@@ -512,6 +512,11 @@ h6 {
     white-space: nowrap;
     transition: 0.3s;
   }
+    /* Target specific (targets third li in navbar ul
+    .navbar ul li:nth-child(3) a {
+      . . . . . .
+  }
+    */
 
   .navbar a i,
   .navbar a:focus i {
