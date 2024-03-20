@@ -16,6 +16,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+// Wrap your JavaScript code in a jQuery document ready function
+jQuery(document).ready(function($) {
+  // Define a function to be called when the page has fully loaded
+  function loadImages() {
+      // Select all images with the class 'deferred-image' and set their 'src' attribute to the value of 'data-src'
+      $('.deferred-image').each(function() {
+          var dataSrc = $(this).data('src');
+          $(this).attr('src', dataSrc);
+      });
+  }
+
+  // Call the loadImages function when the page has fully loaded
+  loadImages();
+
+  // Rest of your code goes here...
+
+  // Your existing code for SPA routing and functionality...
+});
+
+
+  
+
   /**
    * Mobile nav toggle
    */
